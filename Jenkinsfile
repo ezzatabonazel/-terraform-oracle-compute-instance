@@ -18,7 +18,7 @@ stages {
             stage('terrafrom apply'){
                 steps{
                    
-                         sh 'terraform -chdir=./oci-terraform/ apply --var-file=dev.tfvars --auto-approve'
+                         sh 'terraform -chdir=./oci-terraform/ apply  --auto-approve'
                     
                 }
             }
